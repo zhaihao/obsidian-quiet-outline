@@ -5,7 +5,8 @@
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
-		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+		"mkdir": "mkdir -p '/Users/zhaihao/Library/Mobile Documents/iCloud~md~obsidian/Documents/ORISON/.obsidian/plugins/obsidian-quiet-outline'",
+		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production && cp main.js styles.css manifest.json '/Users/zhaihao/Library/Mobile Documents/iCloud~md~obsidian/Documents/ORISON/.obsidian/plugins/obsidian-quiet-outline'",
 		"pub": "node publish.mjs",
 		"version": "node version-bump.mjs && git add manifest.json versions.json"
 	},

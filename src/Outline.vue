@@ -184,6 +184,12 @@ let handleScroll = debounce(_handleScroll, 100);
 
 function _handleScroll(evt: Event) {
     let target = evt.target as HTMLElement;
+	if(!target) {
+		return;
+	}
+	if(!target.classList) {
+		return;
+	}
     if (!target.classList.contains("markdown-preview-view") && !target.classList.contains("cm-scroller")) {
         return;
     }

@@ -1,5 +1,9 @@
 # Obsidian Quiet Outline
 
+```bash
+git remote add upstream git@github.com:guopenghui/obsidian-quiet-outline.git
+```
+
 An outline plugin makes headings easier to read.
 
 [中文文档](https://github.com/guopenghui/obsidian-quiet-outline/blob/master/README-CN.md)
